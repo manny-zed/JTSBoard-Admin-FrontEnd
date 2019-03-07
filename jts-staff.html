@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>JTS Board</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="css/all.css" rel="stylesheet">
+   <!--  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+
+    <!-- <link href="css/datepicker3.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <div class="profile-sidebar">
+                    <div class="profile-userpic">
+                        <img src="images/profile-image.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="profile-usertitle">
+                        <div class="profile-usertitle-name">Welcome</div>
+                        <div class="profile-usertitle-status">Majestic Beauty</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <ul class="list-unstyled components left-menu">
+               <li><a href="#">Calenders</a></li>
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">My Shop</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Customer List</a></li>
+                <li class="active"><a href="#">Jts Staff</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Budget</a></li>
+                <li><a href="#">Expenses</a></li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li><a href="#" class="download">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="images/jts-board-logo.png"></a>                   
+                    <a href="#" class="user-profile"><i class="far fa-user"></i></a>
+                </div>
+            </nav>
+
+            <div class="page-title">
+                <h4 class="">JTS Staff</h4>
+            </div>
+            <div class="main-content">
+                <div class="" id="users">
+
+                     <div class="filter-group form-group">  
+                        <div class="row">
+                            <div class="col-sm-8 col-md-6 col-lg-4">                     
+                                <input type="text" class="search form-control" placeholder="Search" />
+                            </div>
+                            <div class="col-sm-4 col-md-6 col-lg-8 text-right">
+                                <a href="#" class="btn">Add Staff</a>
+                            </div>
+                        </div>
+                     </div>
+
+                    <ul class="list d-flex flex-wrap">
+                        <li class="list--list-item" data-gender="nail artist">
+                            <div class="staff-img">
+                                <img src="images/jts-staff/staff-img1.jpg">
+                                <div class="staff-detail-button">
+                                    <ul>
+                                        <li><a data-toggle="modal" data-target="#myModal" href="#" title="View Profile"><i class="fas fa-eye"></i></a></li>
+                                        <li><a href="#" title="Edit Profile"><i class="fas fa-pencil-alt "></i></a></li>
+                                        <li><a data-toggle="modal" data-target="#myAttendance" href="#" title="Attendance"><i class="fas fa-calendar-alt"></i></a></li>
+                                        <li><a href="#" title="Delete"><i class="fas fa-user-times"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-name text-center name">Lorem Ispum</div>                        
+                        </li>
+                        <li class="list--list-item" data-gender="eyelist">
+                            <div class="staff-img">
+                                <img src="images/jts-staff/staff-img2.jpg">
+                                <div class="staff-detail-button">
+                                    <ul>
+                                       <li><a href="#" title="View Profile"><i class="fas fa-eye"></i></a></li>
+                                        <li><a href="#" title="Edit Profile"><i class="fas fa-pencil-alt "></i></a></li>
+                                        <li><a href="#" title="Attendance"><i class="fas fa-calendar-alt"></i></a></li>
+                                        <li><a href="#" title="Delete"><i class="fas fa-user-times"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-name text-center name">Shweta</div>                        
+                        </li>
+                        <li class="list--list-item" data-gender="nail artist">
+                            <div class="staff-img">
+                                <img src="images/jts-staff/staff-img3.jpg">
+                                <div class="staff-detail-button">
+                                    <ul>
+                                        <li><a href="#" title="View Profile"><i class="fas fa-eye"></i></a></li>
+                                        <li><a href="#" title="Edit Profile"><i class="fas fa-pencil-alt "></i></a></li>
+                                        <li><a href="#" title="Attendance"><i class="fas fa-calendar-alt"></i></a></li>
+                                        <li><a href="#" title="Delete"><i class="fas fa-user-times"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-name text-center name">Vandana</div>                        
+                        </li>
+                        <li class="list--list-item" data-gender="nail artist">
+                            <div class="staff-img">
+                                <img src="images/jts-staff/staff-img4.jpg">
+                                <div class="staff-detail-button">
+                                    <ul>
+                                        <li><a href="#" title="View Profile"><i class="fas fa-eye"></i></a></li>
+                                        <li><a href="#" title="Edit Profile"><i class="fas fa-pencil-alt "></i></a></li>
+                                        <li><a href="#" title="Attendance"><i class="fas fa-calendar-alt"></i></a></li>
+                                        <li><a href="#" title="Delete"><i class="fas fa-user-times"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-name text-center name">Laveena</div>                        
+                        </li>
+                        <li class="list--list-item" data-gender="eyelist">
+                            <div class="staff-img">
+                                <img src="images/jts-staff/staff-img5.jpg">
+                                <div class="staff-detail-button">
+                                    <ul>
+                                        <li><a href="#" title="View Profile"><i class="fas fa-eye"></i></a></li>
+                                        <li><a href="#" title="Edit Profile"><i class="fas fa-pencil-alt "></i></a></li>
+                                        <li><a href="#" title="Attendance"><i class="fas fa-calendar-alt"></i></a></li>
+                                        <li><a href="#" title="Delete"><i class="fas fa-user-times"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-name text-center name">Banushree</div>                        
+                        </li>
+                        <li class="list--list-item" data-gender="eyelist">
+                            <div class="staff-img">
+                                <img src="images/jts-staff/staff-img6.jpg">
+                                <div class="staff-detail-button">
+                                    <ul>
+                                        <li><a href="#" title="View Profile"><i class="fas fa-eye"></i></a></li>
+                                        <li><a href="#" title="Edit Profile"><i class="fas fa-pencil-alt "></i></a></li>
+                                        <li><a href="#" title="Attendance"><i class="fas fa-calendar-alt"></i></a></li>
+                                        <li><a href="#" title="Delete"><i class="fas fa-user-times"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-name text-center name">Deepika</div>                        
+                        </li>
+                        <li class="list--list-item" data-gender="nail artist">
+                            <div class="staff-img">
+                                <img src="images/jts-staff/staff-img7.jpg">
+                                <div class="staff-detail-button">
+                                    <ul>
+                                        <li><a href="#" title="View Profile"><i class="fas fa-eye"></i></a></li>
+                                        <li><a href="#" title="Edit Profile"><i class="fas fa-pencil-alt "></i></a></li>
+                                        <li><a href="#" title="Attendance"><i class="fas fa-calendar-alt"></i></a></li>
+                                        <li><a href="#" title="Delete"><i class="fas fa-user-times"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-name text-center name">Raveena</div>                        
+                        </li>
+                        <li class="list--list-item" data-gender="eyelist">
+                            <div class="staff-img">
+                                <img src="images/jts-staff/staff-img8.jpg">
+                                <div class="staff-detail-button">
+                                    <ul>
+                                        <li><a href="#" title="View Profile"><i class="fas fa-eye"></i></a></li>
+                                        <li><a href="#" title="Edit Profile"><i class="fas fa-pencil-alt "></i></a></li>
+                                        <li><a href="#" title="Attendance"><i class="fas fa-calendar-alt"></i></a></li>
+                                        <li><a href="#" title="Delete"><i class="fas fa-user-times"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-name text-center name">Meena</div>                        
+                        </li>
+                        <li class="list--list-item" data-gender="nail artist">
+                            <div class="staff-img">
+                                <img src="images/jts-staff/staff-img9.jpg">
+                                <div class="staff-detail-button">
+                                    <ul>
+                                        <li><a href="#" title="View Profile"><i class="fas fa-eye"></i></a></li>
+                                        <li><a href="#" title="Edit Profile"><i class="fas fa-pencil-alt "></i></a></li>
+                                        <li><a href="#" title="Attendance"><i class="fas fa-calendar-alt"></i></a></li>
+                                        <li><a href="#" title="Delete"><i class="fas fa-user-times"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-name text-center name">Sonam</div>                        
+                        </li>
+                        <li class="list--list-item" data-gender="eyelist">
+                            <div class="staff-img">
+                                <img src="images/jts-staff/staff-img10.jpg">
+                                <div class="staff-detail-button">
+                                    <ul>
+                                        <li><a href="#" title="View Profile"><i class="fas fa-eye"></i></a></li>
+                                        <li><a href="#" title="Edit Profile"><i class="fas fa-pencil-alt "></i></a></li>
+                                        <li><a href="#" title="Attendance"><i class="fas fa-calendar-alt"></i></a></li>
+                                        <li><a href="#" title="Delete"><i class="fas fa-user-times"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-name text-center name">Pooja</div>                        
+                        </li>
+
+                        <li class="list--list-item" data-gender="nail artist">
+                            <div class="staff-img">
+                                <img src="images/jts-staff/staff-img1.jpg">
+                                <div class="staff-detail-button">
+                                    <ul>
+                                        <li><a href="#" title="View Profile"><i class="fas fa-eye"></i></a></li>
+                                        <li><a href="#" title="Edit Profile"><i class="fas fa-pencil-alt "></i></a></li>
+                                        <li><a href="#" title="Attendance"><i class="fas fa-calendar-alt"></i></a></li>
+                                        <li><a href="#" title="Delete"><i class="fas fa-user-times"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-name text-center name">Madhuri</div>                        
+                        </li>
+                        <li class="list--list-item" data-gender="eyelist">
+                            <div class="staff-img">
+                                <img src="images/jts-staff/staff-img2.jpg">
+                                <div class="staff-detail-button">
+                                    <ul>
+                                        <li><a href="#" title="View Profile"><i class="fas fa-eye"></i></a></li>
+                                        <li><a href="#" title="Edit Profile"><i class="fas fa-pencil-alt "></i></a></li>
+                                        <li><a href="#" title="Attendance"><i class="fas fa-calendar-alt"></i></a></li>
+                                        <li><a href="#" title="Delete"><i class="fas fa-user-times"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-name text-center name">Rekha</div>                        
+                        </li>
+                        <li class="list--list-item" data-gender="nail artist">
+                            <div class="staff-img">
+                                <img src="images/jts-staff/staff-img3.jpg">
+                                <div class="staff-detail-button">
+                                    <ul>
+                                        <li><a href="#" title="View Profile"><i class="fas fa-eye"></i></a></li>
+                                        <li><a href="#" title="Edit Profile"><i class="fas fa-pencil-alt "></i></a></li>
+                                        <li><a href="#" title="Attendance"><i class="fas fa-calendar-alt"></i></a></li>
+                                        <li><a href="#" title="Delete"><i class="fas fa-user-times"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-name text-center name">Hema</div>                        
+                        </li>
+                        <li class="list--list-item" data-gender="eyelist">
+                            <div class="staff-img">
+                                <img src="images/jts-staff/staff-img4.jpg">
+                                <div class="staff-detail-button">
+                                    <ul>
+                                        <li><a href="#" title="View Profile"><i class="fas fa-eye"></i></a></li>
+                                        <li><a href="#" title="Edit Profile"><i class="fas fa-pencil-alt "></i></a></li>
+                                        <li><a href="#" title="Attendance"><i class="fas fa-calendar-alt"></i></a></li>
+                                        <li><a href="#" title="Delete"><i class="fas fa-user-times"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-name text-center name">laveena</div>                        
+                        </li>
+                        <li class="list--list-item" data-gender="nail artist">
+                            <div class="staff-img">
+                                <img src="images/jts-staff/staff-img5.jpg">
+                                <div class="staff-detail-button">
+                                    <ul>
+                                        <li><a href="#" title="View Profile"><i class="fas fa-eye"></i></a></li>
+                                        <li><a href="#" title="Edit Profile"><i class="fas fa-pencil-alt "></i></a></li>
+                                        <li><a href="#" title="Attendance"><i class="fas fa-calendar-alt"></i></a></li>
+                                        <li><a href="#" title="Delete"><i class="fas fa-user-times"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-name text-center name">Banushree</div>                        
+                        </li>
+                    </ul>
+
+                    <div class="no-result">No Results</div>
+                    <ul class="pagination"></ul>
+                </div>
+                
+
+                <!-- The Modal Staff Detail -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">Shweta</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="profile-detail">
+                                        <label class="label-name">Email</label>
+                                        <span class="value-name">info@zed.com</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="profile-detail">
+                                        <label class="label-name">Birthday</label>
+                                        <span class="value-name">1987-05-10</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="profile-detail">
+                                        <label class="label-name">Phone</label>
+                                        <span class="value-name">111-222-3333</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="profile-detail">
+                                        <label class="label-name">Join Date</label>
+                                        <span class="value-name">2015-02-05</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="profile-detail">
+                                        <label class="label-name">Designation</label>
+                                        <span class="value-name">Manager</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="profile-detail">
+                                        <label class="label-name">Salary</label>
+                                        <span class="value-name">1000$</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="profile-detail">
+                                        <label class="label-name">Address</label>
+                                        <span class="value-name">Jaipur</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="profile-detail">
+                                        <label class="label-name">Role Title</label>
+                                        <span class="value-name">Assistant Manager</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="profile-detail">
+                                        <label class="label-name">Address</label>
+                                        <span class="value-name">Jaipur</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="profile-detail">
+                                        <label class="label-name">Lunch Time</label>
+                                        <span class="value-name">01 Hour</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="profile-detail">
+                                        <label class="label-name">Start Lunch Time</label>
+                                        <span class="value-name">01:00:00 PM</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="profile-detail">
+                                        <label class="label-name">End Lunch Time</label>
+                                        <span class="value-name">02:00:00 PM</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="profile-detail">
+                                        <label class="label-name">Employee Code</label>
+                                        <span class="value-name">01adb2</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="profile-detail">
+                                        <label class="label-name">Technician Person</label>
+                                        <span class="value-name">No</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn" data-dismiss="modal">Close</button>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Modal Staff Detail End --->
+
+
+
+
+                <!-- The Modal Attendance -->
+                <div class="modal fade" id="myAttendance">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">Attendance</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body attendance-body">
+                            <h5>Akash</h5>
+                            <a href="#" class="btn btn-attendance">Attendance</a>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn" data-dismiss="modal">Close</button>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Modal Attendance End --->
+
+                
+                               
+            </div>
+
+            <footer class="footer text-right">
+                Copyright © <a href="#">Zein El Dine International</a> 2019. All right reserved. 
+            </footer> 
+
+           
+
+        </div>
+    </div>
+
+   
+
+    <script src="js/lodash.min.js"></script>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>    
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+
+    <script src="js/list.min.js"></script>
+    <script src="js/list.pagination.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+    <script  src="js/index.js"></script>
+
+   
+</body>
+
+</html>

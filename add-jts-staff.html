@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>JTS Board</title>
+
+    <!--- date nad time picker ------->
+    <link href="css/semantic.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="css/all.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/croppie.css">
+
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <div class="profile-sidebar">
+                    <div class="profile-userpic">
+                        <img src="images/profile-image.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="profile-usertitle">
+                        <div class="profile-usertitle-name">Welcome</div>
+                        <div class="profile-usertitle-status">Majestic Beauty</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <ul class="list-unstyled components left-menu">
+               <li><a href="#">Calenders</a></li>
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">My Shop</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Customer List</a></li>
+                <li class="active"><a href="#">Jts Staff</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Budget</a></li>
+                <li><a href="#">Expenses</a></li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li><a href="#" class="download">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="images/jts-board-logo.png"></a>                   
+                    <a href="#" class="user-profile"><i class="far fa-user"></i></a>
+                </div>
+            </nav>
+
+            <div class="page-title">
+                <h4 class="">Add Staff</h4>
+            </div>
+            <div class="main-content">
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Fill The Form              
+                    </div>
+                    <div class="panel-body"> 
+
+
+                        <div class="text-center">                            
+                            <label class="cabinet center-block">                                       
+                                <img src="" class="gambar img-responsive img-thumbnail" id="item-img-output" />
+                                <i class="fa fa-camera"></i>                                        
+                                <input type="file" class="item-img file center-block" name="file_photo"/>
+                            </label>                               
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Phone Number">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Designation">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Salary">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Street Address">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Role Title">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Is this employee a practitioner?">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <!-- <div class="form-group">
+                                    <input class="form-control" type="text" readonly="readonly" placeholder="Joining Date"/>                                    
+                                </div>
+ -->
+                                <div class="ui calendar form-group" id="example1">                                
+                                  <input class="form-control" type="text" id="joiningDatesssss" placeholder="Joining Date" readonly="readonly">                                
+                                </div>
+
+
+                            </div>
+                            <div class="col-lg-6">
+                                <!-- <div class="form-group">
+                                    <input class="form-control" type="text" readonly="readonly" placeholder="Birth Date"/>
+                                </div> -->
+
+                                <div class="ui calendar form-group" id="example2">                                
+                                  <input class="form-control" type="text" placeholder="Birth Date" readonly="readonly">                                
+                                </div>
+
+
+                            </div>
+                            
+                            <div class="col-lg-6">
+                               <!--  <div class="form-group">
+                                    <input type="text" readonly="readonly" class="form-control" placeholder="Lunch start time">
+                                </div>
+ -->
+                                <div class="ui calendar form-group" id="example3">
+                                    
+                                      <input class="form-control" type="text" placeholder="Lunch Start Time" readonly="readonly">
+                                    
+                                  </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <!-- <div class="form-group">
+                                    <input type="text" readonly="readonly" class="form-control" placeholder="Lunch end time">
+                                </div> -->
+
+                                <div class="ui calendar form-group" id="example4">
+                                    
+                                      <input class="form-control" type="text" placeholder="Lunch End Time" readonly="readonly">
+                                  
+                                  </div>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" readonly="readonly" class="form-control" placeholder="Lunch Time">
+                                </div>
+                                
+                                  
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" readonly="readonly" class="form-control" placeholder="Employee Code">
+                                </div>
+                            </div>
+
+                            
+
+
+                            <div class="col-lg-12">
+                                    <a href="#" class="btn">Submit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------- pannel end---------->
+                               
+            </div>
+
+                      
+
+        </div>
+    </div>
+
+     <footer class="footer text-right">
+        Copyright © <a href="#">Zein El Dine International</a> 2019. All right reserved. 
+    </footer> 
+    <div class="modal fade" id="cropImagePop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">Crop Image</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>                    
+                </div>
+                <div class="modal-body">
+                    <div id="upload-demo" class="center-block"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                    <button type="button" id="cropImageBtn" class="btn">Crop</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/lodash.min.js"></script>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="js/jquery.min.js"></script>    
+   
+    <!-- data and time picker -->
+    <script src="js/semantic.min.js"></script>
+
+    <!-- crop image --------->
+    <script src="js/croppie.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+  
+    <script src="js/list.min.js"></script>
+    <script src="js/list.pagination.js"></script>
+
+
+
+
+    <!-- custom js --------->
+    <script  src="js/index.js"></script>
+
+     
+
+   
+</body>
+
+</html>

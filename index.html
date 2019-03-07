@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>JTS Board</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="css/all.css" rel="stylesheet">
+   <!--  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+
+    <!-- <link href="css/datepicker3.css" rel="stylesheet"> -->
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <div class="profile-sidebar">
+                    <div class="profile-userpic">
+                        <img src="images/profile-image.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="profile-usertitle">
+                        <div class="profile-usertitle-name">Welcome</div>
+                        <div class="profile-usertitle-status">Majestic Beauty</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <ul class="list-unstyled components left-menu">
+               <li><a href="#">Calenders</a></li>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">My Shop</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Customer List</a></li>
+                <li><a href="#">Jts Staff</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Budget</a></li>
+                <li><a href="#">Expenses</a></li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li><a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="images/jts-board-logo.png"></a>                   
+                    <a href="#" class="user-profile"><i class="far fa-user"></i></a>
+                </div>
+            </nav>
+
+            <div class="page-title">
+                <h4 class="">My Shop</h4>
+            </div>
+            <div class="main-content">
+                
+                <div class="row">
+                    <div class="col-lg-3 col-6">
+                        <a href="#" class="category block-link">
+                            <img src="images/icons/category-icon.png">
+                            <span>Category</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <a href="#" class="ticket block-link">
+                            <img src="images/icons/ticket-icon.png">
+                            <span>Ticket</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <a href="#" class="products block-link">
+                            <img src="images/icons/products-icon.png">
+                            <span>Products</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <a href="#" class="my-services block-link">
+                            <img src="images/icons/my-services-icon.png">
+                            <span>My Services</span>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-6">
+                        <a href="#" class="holiday block-link">
+                            <img src="images/icons/holiday-icon.png">
+                            <span>Holiday</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <a href="#" class="payment-info block-link">
+                            <img src="images/icons/payment-info-icon.png">
+                            <span>Payment Info</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <a href="#" class="custom-form block-link">
+                            <img src="images/icons/custom-form-icon.png">
+                            <span>Custom Form</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <a href="#" class="others block-link">
+                            <img src="images/icons/others-icon.png">
+                            <span>Others</span>
+                        </a>
+                    </div>
+                </div>
+
+               <!--  <div class="line"></div> -->
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Customer Detail               
+                    </div>
+                    <div class="panel-body"> 
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="profile-detail">
+                                    <label class="label-name">Name</label>
+                                    <span class="value-name">Ravinder</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">                                
+                                <div class="profile-detail">
+                                    <label class="label-name">Salon Name</label>
+                                    <span class="value-name">Name Test Salon</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="profile-detail">
+                                    <label class="label-name">Email</label>
+                                    <span class="value-name">shweta@yopmail.com</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">                                
+                                <div class="profile-detail">
+                                    <label class="label-name">Company Name</label>
+                                    <span class="value-name">ZED</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="profile-detail">
+                                    <label class="label-name">Web</label>
+                                    <span class="value-name">www.google.com</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">                                
+                                <div class="profile-detail">
+                                    <label class="label-name">Phone Number</label>
+                                    <span class="value-name">343-4343-4</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="profile-detail">
+                                    <label class="label-name">Zip Code</label>
+                                    <span class="value-name">302017</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">                                
+                                <div class="profile-detail">
+                                    <label class="label-name">City</label>
+                                    <span class="value-name">Jaipur</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="profile-detail">
+                                    <label class="label-name">Address</label>
+                                    <span class="value-name">Jaipur</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">                                
+                                <div class="profile-detail">
+                                    <label class="label-name">Apartment/Flat Name</label>
+                                    <span class="value-name">Rajasthan</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="profile-detail">
+                                    <label class="label-name">Number Of Employees</label>
+                                    <span class="value-name">Test</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">                                
+                                <div class="profile-detail">
+                                    <label class="label-name">Ads In Use</label>
+                                    <span class="value-name">Test</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="profile-detail">
+                                    <label class="label-name">Employee Pin Code</label>
+                                    <span class="value-name">12345</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">                                
+                                <div class="profile-detail">
+                                    <label class="label-name">Coustmer Pin Code</label>
+                                    <span class="value-name">12345</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="profile-detail">
+                                    <label class="label-name">Average Customer</label>
+                                    <span class="value-name">143</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">                                
+                                <div class="profile-detail">
+                                    <label class="label-name">Cash Box</label>
+                                    <span class="value-name">test</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="profile-detail">
+                                    <label class="label-name">Start Date</label>
+                                    <span class="value-name">20</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">                                
+                                <div class="profile-detail">
+                                    <label class="label-name">Weekend</label>
+                                    <span class="value-name">test</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit-btn"><a href="#" class="btn">Edit Profile</a></div>
+                    </div>
+                </div>
+                <!------- pannel end---------->
+
+
+                <footer class="footer text-right">
+                    Copyright © <a href="#">Zein El Dine International</a> 2019. All right reserved. 
+                </footer> 
+
+                               
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+
+    
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

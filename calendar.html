@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>JTS Board</title>
+
+    <!--- date nad time picker ------->
+    <link href="css/semantic.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="css/all.css" rel="stylesheet">
+   <!--  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+   <link rel="stylesheet" href="css/croppie.css">
+
+    <!-- <link href="css/datepicker3.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <div class="profile-sidebar">
+                    <div class="profile-userpic">
+                        <img src="images/profile-image.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="profile-usertitle">
+                        <div class="profile-usertitle-name">Welcome</div>
+                        <div class="profile-usertitle-status">Majestic Beauty</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <ul class="list-unstyled components left-menu">
+               <li><a href="#">Calenders</a></li>
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">My Shop</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Customer List</a></li>
+                <li class="active"><a href="#">Jts Staff</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Budget</a></li>
+                <li><a href="#">Expenses</a></li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li><a href="#" class="download">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="images/jts-board-logo.png"></a>                   
+                    <a href="#" class="user-profile"><i class="far fa-user"></i></a>
+                </div>
+            </nav>
+
+            <div class="page-title">
+                <h4 class="">Reservations</h4>
+            </div>
+            <div class="main-content">
+                
+                <!-- Bootstrap CSS -->
+                <!-- jQuery first, then Bootstrap JS. -->
+                <!-- Nav tabs -->
+
+                <ul class="nav nav-tabs custom-nav-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">Customer Reservation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#references" role="tab" data-toggle="tab">Staff</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane fade in active show" id="profile">
+
+                    <div class="" id="users">
+
+                         <div class="filter-group form-group">  
+                            <div class="row">
+                                <div class="col-sm-8 col-md-6 col-lg-4">                     
+                                    <input type="text" class="search form-control" placeholder="Search" />
+                                </div>
+                                <div class="col-sm-4 col-md-6 col-lg-8 text-right">
+                                    <a href="#" class="btn"><i class="fas fa-plus"></i> Customer Reservation</a>
+                                </div>
+                            </div>
+                         </div>
+
+                        <ul class="list d-flex flex-wrap">
+                            <li class="list--list-item" data-gender="nail artist">
+                                <div class="staff-img">
+                                    <div class="attendance-detail">
+                                        <ul>
+                                            <li><label>Date</label><span>2019-02-26</span></li>
+                                            <li><label>Time</label><span>10:30 AM</span></li>
+                                            <li><label>Last Visit</label><span>2019-02-20</span></li>
+                                            <li><label>Service Name</label><span>Eyelash</span></li>
+                                            <li><label>Price</label><span>7000</span></li>
+                                            <li><label>Status</label><span>Process</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="staff-detail-button">
+                                        <ul>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Edit Reservation"><i class="fas fa-pencil-alt "></i></a></li>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Delete Reservation"><i class="fas fa-trash-alt"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="staff-name text-center name">Azad</div>
+                            </li>
+                            <li class="list--list-item" data-gender="nail artist">
+                                <div class="staff-img">
+                                    <div class="attendance-detail">
+                                        <ul>
+                                            <li><label>Date</label><span>2019-02-26</span></li>
+                                            <li><label>Time</label><span>10:30 AM</span></li>
+                                            <li><label>Last Visit</label><span>2019-02-20</span></li>
+                                            <li><label>Service Name</label><span>Eyelash</span></li>
+                                            <li><label>Price</label><span>7000</span></li>
+                                            <li><label>Status</label><span>Process</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="staff-detail-button">
+                                        <ul>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Edit Reservation"><i class="fas fa-pencil-alt "></i></a></li>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Delete Reservation"><i class="fas fa-trash-alt"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="staff-name text-center name">Azad</div>
+                            </li>
+                            <li class="list--list-item" data-gender="nail artist">
+                                <div class="staff-img">
+                                    <div class="attendance-detail">
+                                        <ul>
+                                            <li><label>Date</label><span>2019-02-26</span></li>
+                                            <li><label>Time</label><span>10:30 AM</span></li>
+                                            <li><label>Last Visit</label><span>2019-02-20</span></li>
+                                            <li><label>Service Name</label><span>Eyelash</span></li>
+                                            <li><label>Price</label><span>7000</span></li>
+                                            <li><label>Status</label><span>Process</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="staff-detail-button">
+                                        <ul>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Edit Reservation"><i class="fas fa-pencil-alt "></i></a></li>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Delete Reservation"><i class="fas fa-trash-alt"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="staff-name text-center name">Azad</div>
+                            </li>
+                            <li class="list--list-item" data-gender="nail artist">
+                                <div class="staff-img">
+                                    <div class="attendance-detail">
+                                        <ul>
+                                            <li><label>Date</label><span>2019-02-26</span></li>
+                                            <li><label>Time</label><span>10:30 AM</span></li>
+                                            <li><label>Last Visit</label><span>2019-02-20</span></li>
+                                            <li><label>Service Name</label><span>Eyelash</span></li>
+                                            <li><label>Price</label><span>7000</span></li>
+                                            <li><label>Status</label><span>Process</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="staff-detail-button">
+                                        <ul>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Edit Reservation"><i class="fas fa-pencil-alt "></i></a></li>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Delete Reservation"><i class="fas fa-trash-alt"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="staff-name text-center name">Azad</div>
+                            </li>
+                            <li class="list--list-item" data-gender="nail artist">
+                                <div class="staff-img">
+                                    <div class="attendance-detail">
+                                        <ul>
+                                            <li><label>Date</label><span>2019-02-26</span></li>
+                                            <li><label>Time</label><span>10:30 AM</span></li>
+                                            <li><label>Last Visit</label><span>2019-02-20</span></li>
+                                            <li><label>Service Name</label><span>Eyelash</span></li>
+                                            <li><label>Price</label><span>7000</span></li>
+                                            <li><label>Status</label><span>Process</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="staff-detail-button">
+                                        <ul>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Edit Reservation"><i class="fas fa-pencil-alt "></i></a></li>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Delete Reservation"><i class="fas fa-trash-alt"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="staff-name text-center name">Azad</div>
+                            </li>
+                            <li class="list--list-item" data-gender="nail artist">
+                                <div class="staff-img">
+                                    <div class="attendance-detail">
+                                        <ul>
+                                            <li><label>Date</label><span>2019-02-26</span></li>
+                                            <li><label>Time</label><span>10:30 AM</span></li>
+                                            <li><label>Last Visit</label><span>2019-02-20</span></li>
+                                            <li><label>Service Name</label><span>Eyelash</span></li>
+                                            <li><label>Price</label><span>7000</span></li>
+                                            <li><label>Status</label><span>Process</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="staff-detail-button">
+                                        <ul>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Edit Reservation"><i class="fas fa-pencil-alt "></i></a></li>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Delete Reservation"><i class="fas fa-trash-alt"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="staff-name text-center name">Azad</div>
+                            </li>
+                            <li class="list--list-item" data-gender="nail artist">
+                                <div class="staff-img">
+                                    <div class="attendance-detail">
+                                        <ul>
+                                            <li><label>Date</label><span>2019-02-26</span></li>
+                                            <li><label>Time</label><span>10:30 AM</span></li>
+                                            <li><label>Last Visit</label><span>2019-02-20</span></li>
+                                            <li><label>Service Name</label><span>Eyelash</span></li>
+                                            <li><label>Price</label><span>7000</span></li>
+                                            <li><label>Status</label><span>Process</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="staff-detail-button">
+                                        <ul>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Edit Reservation"><i class="fas fa-pencil-alt "></i></a></li>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Delete Reservation"><i class="fas fa-trash-alt"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="staff-name text-center name">Azad</div>
+                            </li>
+                            <li class="list--list-item" data-gender="nail artist">
+                                <div class="staff-img">
+                                    <div class="attendance-detail">
+                                        <ul>
+                                            <li><label>Date</label><span>2019-02-26</span></li>
+                                            <li><label>Time</label><span>10:30 AM</span></li>
+                                            <li><label>Last Visit</label><span>2019-02-20</span></li>
+                                            <li><label>Service Name</label><span>Eyelash</span></li>
+                                            <li><label>Price</label><span>7000</span></li>
+                                            <li><label>Status</label><span>Process</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="staff-detail-button">
+                                        <ul>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Edit Reservation"><i class="fas fa-pencil-alt "></i></a></li>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Delete Reservation"><i class="fas fa-trash-alt"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="staff-name text-center name">Azad</div>
+                            </li>
+                        </ul>
+
+                        <div class="no-result">No Results</div>
+                        <ul class="pagination"></ul>
+                    </div>
+
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="buzz">
+                        
+                    <div class="" id="users1">
+
+                         <div class="filter-group form-group">  
+                            <div class="row">
+                                <div class="col-sm-8 col-md-6 col-lg-4">                     
+                                    <input type="text" class="search form-control" placeholder="Search" />
+                                </div>
+                                <div class="col-sm-4 col-md-6 col-lg-8 text-right">
+                                    <a href="#" class="btn"><i class="fas fa-plus"></i> Event Reservation</a>
+                                </div>
+                            </div>
+                         </div>
+
+                        <ul class="list d-flex flex-wrap">
+                            <li class="list--list-item" data-gender="nail artist">
+                                <div class="staff-img">
+                                    <div class="attendance-detail">
+                                        <ul>
+                                            <li><label>Date</label><span>2019-02-26</span></li>
+                                            <li><label>Time</label><span>10:30 AM</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="staff-detail-button">
+                                        <ul>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Edit Reservation"><i class="fas fa-pencil-alt "></i></a></li>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Delete Reservation"><i class="fas fa-trash-alt"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="staff-name text-center name">Azad</div>
+                            </li>
+                            <li class="list--list-item" data-gender="nail artist">
+                                <div class="staff-img">
+                                    <div class="attendance-detail">
+                                        <ul>
+                                            <li><label>Date</label><span>2019-02-26</span></li>
+                                            <li><label>Time</label><span>10:30 AM</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="staff-detail-button">
+                                        <ul>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Edit Reservation"><i class="fas fa-pencil-alt "></i></a></li>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Delete Reservation"><i class="fas fa-trash-alt"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="staff-name text-center name">Azad</div>
+                            </li>
+                        </ul>
+
+                        <div class="no-result">No Results</div>
+                        <ul class="pagination"></ul>
+                    </div>
+
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="references">
+                      
+                      <div class="" id="users2">
+
+                         <div class="filter-group form-group">  
+                            <div class="row">
+                                <div class="col-sm-8 col-md-6 col-lg-4">                     
+                                    <input type="text" class="search form-control" placeholder="Search" />
+                                </div>
+                                <div class="col-sm-4 col-md-6 col-lg-8 text-right">
+                                    <a href="#" class="btn"><i class="fas fa-plus"></i> Staff Holiday</a>
+                                </div>
+                            </div>
+                         </div>
+
+                        <ul class="list d-flex flex-wrap">
+                            <li class="list--list-item" data-gender="nail artist">
+                                <div class="staff-img">
+                                    <div class="attendance-detail">
+                                        <ul>
+                                            <li><label>Date</label><span>2019-02-26</span></li>
+                                            <li><label>Time</label><span>10:30 AM</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="staff-detail-button">
+                                        <ul>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Edit Reservation"><i class="fas fa-pencil-alt "></i></a></li>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Delete Reservation"><i class="fas fa-trash-alt"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="staff-name text-center name">Azad</div>
+                            </li>
+                            <li class="list--list-item" data-gender="nail artist">
+                                <div class="staff-img">
+                                    <div class="attendance-detail">
+                                        <ul>
+                                            <li><label>Date</label><span>2019-02-26</span></li>
+                                            <li><label>Time</label><span>10:30 AM</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="staff-detail-button">
+                                        <ul>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Edit Reservation"><i class="fas fa-pencil-alt "></i></a></li>
+                                            <li><a data-toggle="modal" data-target="#myModal" href="#" title="Delete Reservation"><i class="fas fa-trash-alt"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="staff-name text-center name">Azad</div>
+                            </li>
+                        </ul>
+
+                        <div class="no-result">No Results</div>
+                        <ul class="pagination"></ul>
+                    </div>
+
+
+                  </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+   
+     <footer class="footer text-right">
+        Copyright © <a href="#">Zein El Dine International</a> 2019. All right reserved. 
+    </footer> 
+  
+    <script src="js/lodash.min.js"></script>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="js/jquery.min.js"></script>    
+   
+    <!-- data and time picker -->
+    <script src="js/semantic.min.js"></script>
+
+    <!-- crop image --------->
+    <script src="js/croppie.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+  
+    <script src="js/list.min.js"></script>
+    <script src="js/list.pagination.js"></script>
+
+
+
+
+    <!-- custom js --------->
+    <script  src="js/index.js"></script>
+
+     
+
+</body>
+
+</html>
